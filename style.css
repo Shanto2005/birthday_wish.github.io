@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    background: #020202;
+    cursor: crosshair;
+    position: relative;
+}
+canvas{
+    display:block;
+    opacity: 0.8;
+}
+.bgImg{
+    background-image: url('383964391_269171576092448_4708660814894962152_n\ \(1\).jpg');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+    font-family: "Source Sans Pro";
+    font-size: 50px;
+    font-weight: 900;
+    -webkit-user-select: none;
+    user-select: none;
+  }
