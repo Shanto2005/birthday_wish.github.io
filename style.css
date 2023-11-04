@@ -27,4 +27,52 @@ h1 {
     font-weight: 900;
     -webkit-user-select: none;
     user-select: none;
-  }  
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+    margin-top: -155px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  .swiper-button-next::after{
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 10px;
+  }
+
+.swiper-button-prev::after{
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 10px;
+  }
+
+  .swiper-button-next:focus-visible{
+    outline: unset;
+  }
+
+.swiper-button-prev:focus-visible{
+    outline: unset;
+  }
+
+  .swiper-button-next{
+        right: 50px;
+  }
+
+.swiper-button-prev{
+        left: 50px;
+  }

@@ -156,3 +156,10 @@ document.ontouchstart = evt => birthday.onClick(evt)
   	
 
   })() 
+
+
+  // var video = document.getElementById('vidId');
+video = $('.video-selector')[0];
+video.pause();
+video.currentTime = 0;
+video.load();

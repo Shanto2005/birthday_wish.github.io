@@ -4,27 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slick.css">
+    <link rel="stylesheet" href="slick-theme.css">
 </head>
 <body>
 
 
-    <video controls autoplay style="position: absolute; display: none;">
+    <video class="video-selector" id="vidId" controls autoplay re style="position: absolute; display: none;">
         <source src="anika.mp4">
     </video>
     
     <div class="bgImg" style="position: relative;">
         <canvas id="birthday"></canvas>
+        <h1>Happy Birthday Anika</h1>
     </div>
-    <h1>Happy Birthday Anika</h1>
 
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="anika-1">
+                <img src="anika_1.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="anika-2">
+                <img src="anika_2.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="anika-3">
+                <img src="anika_3.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="anika-4">
+                <img src="anika_4.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="anika-5">
+                <img src="anika_5.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="anika-6">
+                <img src="anika_6.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+    <script src="slick.min.js"></script>
 
     <script>
-        window.onload = function() {
-            var audio = document.getElementById('audio');
-            audio.play();
-        };
-    </script>
+        var swiper = new Swiper(".mySwiper", {
+            autoplay : true,
+            loop : true,
+          navigation:
+           {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+
+
 </body>
 </html>
