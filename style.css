@@ -4,6 +4,9 @@ body {
     cursor: crosshair;
     position: relative;
 }
+video{
+  width: 1px;
+}
 canvas{
     display:block;
     opacity: 0.8;
@@ -32,7 +35,7 @@ h1 {
   .swiper {
     width: 100%;
     height: 100%;
-    margin-top: -155px;
+    margin-top: -175px;
   }
 
   .swiper-slide {
