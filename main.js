@@ -158,8 +158,56 @@ document.ontouchstart = evt => birthday.onClick(evt)
   })() 
 
 
-  // var video = document.getElementById('vidId');
-video = $('.video-selector')[0];
-video.pause();
-video.currentTime = 0;
-video.load();
+  // document.addEventListener("DOMContentLoaded", function () {
+  //   const letters = document.querySelectorAll(".letter");
+  
+  //   function getRandomNeonColor() {
+  //     const randomChannel = () => Math.floor(Math.random() * 155 + 100);
+  //     const randomRed = randomChannel();
+  //     const randomGreen = randomChannel();
+  //     const randomBlue = randomChannel();
+  //     return `rgb(${randomRed},${randomGreen},${randomBlue})`;
+  //   }
+  
+  //   function applyRandomProperties(letter) {
+  //     const randomDelay = Math.random() * 0.6;
+  //     const randomColor = getRandomNeonColor();
+  
+  //     letter.style.animation = `randomMove 0.5s infinite alternate ${randomDelay}s`;
+  //     letter.style.color = randomColor;
+  
+  //     setInterval(function () {
+  //       letter.style.color = getRandomNeonColor();
+  //     }, 1000); // Update color every 1000 milliseconds (1 second)
+  //   }
+  
+  //   letters.forEach(applyRandomProperties);
+  // });
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const letters = document.querySelectorAll(".letter");
+  
+    function getRandomNeonColor() {
+      const randomChannel = () => Math.floor(Math.random() * 155 + 100);
+      const randomRed = randomChannel();
+      const randomGreen = randomChannel();
+      const randomBlue = randomChannel();
+      return `rgb(${randomRed},${randomGreen},${randomBlue})`;
+    }
+  
+    function applyRandomProperties(letter) {
+      const randomDelay = Math.random() * 0.6;
+      const randomColor = getRandomNeonColor();
+  
+      letter.style.animation = `randomMove 0.5s infinite alternate ${randomDelay}s`;
+      letter.style.color = randomColor;
+  
+      setInterval(function () {
+        letter.style.color = getRandomNeonColor();
+      }, 1000); // Update color every 1000 milliseconds (1 second)
+    }
+  
+    letters.forEach(applyRandomProperties);
+  });
+  

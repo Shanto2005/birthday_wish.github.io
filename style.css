@@ -1,42 +1,98 @@
-body {
+/* body {
     margin: 0;
     background: #020202;
     cursor: crosshair;
     position: relative;
 }
-video{
-  width: 1px;
-  height: 1px;
-}
-canvas{
+
+  
+
+
+
+
+
+  
+  /* letters */
+  .random-word {
+    font-size: 6em;
+    z-index: 10;
+    position: absolute;
+  }
+  
+  .letter {
+    display: inline-block;
+    text-shadow: 2px 4px 8px #000;
+  }
+  
+  .random-move {
+    animation: randomMove 0.5s infinite alternate;
+  }
+  
+  @keyframes randomMove {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(2px);
+    }
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Dynapuff, sans-serif;
+    font-size: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    height: 100vh;
+    background-color: #0e0e0e;
+  }
+
+  /* ballon */
+
+  .balloon {
+    position: absolute;
+    bottom: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: balloonMove 5s linear infinite;
+  }
+  
+  @keyframes balloonMove {
+    0% {
+      transform: translateY(0);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateY(-200vh);
+      opacity: 0;
+    }
+  }
+
+
+  canvas{
     display:block;
     opacity: 0.8;
 }
-.bgImg{
+  .bgImg{
     background-image: url('sabina11.jpg');
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-h1 {
-    text-align: center;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    color: #fff;
-    font-family: "Source Sans Pro";
-    font-size: 50px;
-    font-weight: 900;
-    -webkit-user-select: none;
-    user-select: none;
-  }
 
   .swiper {
     width: 100%;
     height: 100%;
-    margin-top: -175px;
+    margin-top: -210px;
   }
 
   .swiper-slide {
@@ -52,6 +108,7 @@ h1 {
     width: 150px;
     height: 150px;
     object-fit: cover;
+    border-radius: 10px;
   }
   .swiper-button-next::after{
     font-size: 20px;
@@ -80,3 +137,5 @@ h1 {
 .swiper-button-prev{
         left: 50px;
   }
+  
+  
